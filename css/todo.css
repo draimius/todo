@@ -1,0 +1,129 @@
+*, html, body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Courier New';
+    height: 100%;
+    width: 100%;
+    background: linear-gradient(to right, white, rgb(24, 77, 124));
+}
+
+#container {
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+#frame {
+    margin: auto;
+    margin-top: 20vh;
+    margin-bottom: 10vh;
+    border-radius: 3px 3px 0 0;
+    width: 400px;
+    color: white;
+}
+
+nav {
+    min-width: 100%;
+    background-color: rgb(0, 122, 188);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 15px;
+    margin: 0;
+}
+
+.task {
+    border-bottom: 15px;
+    border-left: 15px;
+    border-right: 15px;
+    border-color: rgb(0, 122, 188);
+    border-style: solid;
+    outline-offset: none;
+    margin: 0;
+    outline: none;
+    width: 100%;
+    padding: 15px;
+    font-size: 1.2rem;
+    font-family: 'Courier New';
+    color: black;
+    display: none;
+}
+
+#add {
+    background: none;
+    border: none;
+    color: white;
+    font-size: 25px;
+    transition: color .3s ease;
+    display: block;
+    outline-color: white;
+    outline-offset: 3px;
+}
+
+#add:hover {
+    color: rgb(143, 167, 208);
+    cursor: pointer;
+}
+
+article {
+    background-color: rgb(240, 240, 240);
+    display: flex;
+}
+
+article:nth-child(odd) {
+    background: white;
+}
+
+p {
+    width: 100%;
+    padding: 10px;
+    font-size: large;
+    font-weight: bold;
+    background: none;
+    color: black;
+    overflow-wrap: break-word;
+    overflow: hidden;
+}
+
+p:hover {
+    cursor: pointer;
+}
+
+.list {
+    display: flex;
+    flex-direction: column;
+}
+
+.strike {
+    text-decoration: line-through;
+    color: rgb(194, 194, 194);
+}
+
+.show {
+    display: block;
+}
+
+section {
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all .6s ease-in-out;
+    width: 0;
+    box-sizing: border-box;
+    background-color: red;
+    color: black;
+    content: "🗑";
+    font-size: 29px;
+    opacity: 0;
+}
+
+.delete {
+    width: 50px;
+    opacity: 100%;
+}
